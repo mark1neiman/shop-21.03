@@ -1,0 +1,93 @@
+.sales__item-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #ffffff;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .sales__title {
+    font-weight: 600;
+    font-size: 24px;
+    color: #f16d7f;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 50px;
+  }
+  .sales__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+  }
+  .sales__list-accesories {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    margin-bottom: 100px;
+  }
+  .sales__item {
+    height: 260px;
+    width: 360px;
+    background-color: var(--sales-bkg);
+    margin: 15px;
+  }
+  
+  .sales__item--women {
+    background-image: url(../img/main-photo-1.jpg);
+    grid-column-start: 2;
+    position: relative;
+  }
+  
+  .sales__item--men {
+    background-image: url(../img/main-photo-2.jpg);
+    grid-column-start: 3;
+    position: relative;
+  }
+  
+  .sales__item--kids {
+    background-image: url(../img/main-photo-3.jpg);
+    grid-column-start: 4;
+    position: relative;
+  }
+  .sales__item--shoes {
+    background-image: url(../img/main-photo-final.jpg);
+    height: 180px;
+    width: 1140px;
+    grid-column-start: 2s;
+    position: relative;
+  }
+  @media (max-width: $mobile-width) {
+    .sales__list {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      justify-content: center;
+    }
+    .sales__item--women {
+      grid-row-start: 1;
+      grid-column-start: 1;
+    }
+    .sales__item--men {
+      grid-row-start: 2;
+      grid-column-start: 1;
+    }
+    .sales__item--kids {
+      grid-row-start: 3;
+      grid-column-start: 1;
+    }
+    .sales__list-accesories1 {
+      grid-template-columns: 1fr;
+      justify-content: center;
+      margin: 0 auto;
+    }
+    .sales__item--shoes{
+      height: 110px;
+      width: 360px;
+      margin: 0 0 0 7px;
+    }
+  }

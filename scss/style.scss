@@ -1,6 +1,10 @@
-@import './variables';
-@import './reset';
-@import './general';
+@import '../scss/variables';
+@import '../scss/general';
+@import '../scss/reset';
 
-@import './blocks/_button';
-@import './blocks/_products';
+@import '../scss/blocks/brand';
+@import '../scss/blocks/button';
+@import '../scss/blocks/header';
+@import '../scss/blocks/nav-item';
+@import '../scss/blocks/products';
+@import '../scss/blocks/sales';

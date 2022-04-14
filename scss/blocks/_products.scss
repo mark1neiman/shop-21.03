@@ -70,6 +70,14 @@
     opacity: 1;
     transition: 0.6s;
     display: block;
+    cursor: pointer; 
+  }
+
+  .products__item:active .products__item-img-button,
+  .products__item:active .products__item-overlay:before {
+    opacity: 1;
+    transition: 0.6s;
+    display: block;
   }
   
   .products__item-title {
@@ -87,4 +95,16 @@
     font-size: 16px;
     color: #f16d7f;
     margin: 18px 0 10px 17px;
+  }
+  @media (max-width: $mobile-width) {
+    .products__list {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+      justify-content: center;
+    }
+    .products__item-img-button {
+      padding: 15px 10px 0 10px;
+      margin-left: 15px;
+    }
   }
