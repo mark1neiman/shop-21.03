@@ -1,0 +1,26 @@
+.nav-item__title{
+    font-weight: 400;
+    font-size: 14px;
+    color: #F16D7F;
+    text-transform: uppercase;
+    margin: 20px 0 0 34px
+    }
+    .nav-item__item{
+      font-weight: 400;
+      font-size: 14px;
+      color: #6F6E6E;
+      margin: 11px 0 0 55px
+    }
+    
+    .nav-item__title:hover,
+    .nav-item__title:focus {
+      color: #6F6E6E;
+      transition: 0.2s;
+      cursor: pointer;
+    }
+    .nav-item__item:hover,
+    .nav-item__item:focus {
+      color: #F16D7F;
+      transition: 0.2s;
+      cursor: pointer;
+    }

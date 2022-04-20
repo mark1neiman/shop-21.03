@@ -1,0 +1,145 @@
+.header {
+    background-color: var(--black-bkg);
+  }
+  
+  .header__menu-right {
+    float: right;
+    display: flex;
+    position: relative;
+  }
+  .header__menu-left {
+    float: left;
+    display: flex;
+  }
+  .header__wrp {
+    display: flex;
+    align-items: center;
+    min-height: 75px;
+    justify-content: space-between;
+  }
+  
+  .header__menu-list {
+    display: flex;
+    float: right;
+  }
+  
+  .header__search{
+    fill: $icon-color;
+  }
+  .header__burger-icon {
+    fill: $icon-color;
+  }
+  .header__account-icon{
+    fill: $icon-color;
+    margin: 0 20px 0 20px;
+  }
+  .header__cart-icon{
+    fill: $icon-color;
+  }
+  
+.header__cart:hover .header__cart-icon,
+.header__cart:focus .header__cart-icon {
+  fill: $pink-color;
+  transition: 0.2s;
+}
+.header__burger:hover .header__burger-icon,
+.header__burger:focus .header__burger-icon {
+  fill: $pink-color;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.header__account:hover .header__account-icon,
+.header__account:focus .header__account-icon {
+  fill: $pink-color;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.header__cart:active .header__cart-icon{
+  opacity: 0.7;
+}
+.header__account:active .header__account-icon{
+  opacity: 0.7;
+}
+.header__burger:focus .header__burger-icon{
+  opacity: 0.7;
+}
+.icon__size {
+  height: 20px;
+}
+.header__logo {
+  margin: 0 41px 0 0;
+}
+.header__menu-buger {
+    fill: $icon-color;
+    display: flex;
+    justify-content: flex-end;
+    background-color: transparent;
+  
+  }
+  .header__burger{
+    background: transparent;
+    position: relative;
+    border: transparent;
+    padding-top: 4px;
+  }
+  .header__burger:hover,
+  .header__burger:focus{
+    fill: $pink-color;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  .header__burger-menu {
+    position: absolute;
+    width: 240px;
+    height: 765px;
+    top: 170%;
+    left:100%;
+    background: white;
+    display: none;
+  }
+  .header__burger:hover +.header__burger-menu,
+  .header__burger:focus +.header__burger-menu {
+    display: block;
+    transition: 0.6s;
+  }
+  
+  .header__burger-menu:hover {
+    display: block;
+    transition: 0.6s;
+  }
+  .header__nav-title{
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin: 37px 0 5px 34px
+  }
+  .header-link {
+    margin: 0 0 0 33px;
+  }
+  .header__search-mobile{
+    display: none;
+  }
+  @media (max-width: $mobile-width) {
+    .header__logo{
+      padding-left: 16px;
+    }
+    .header__burger{
+      padding-right: 16px;
+    }
+    .header__account{
+      display: none;
+    }
+    .header__cart{
+      display: none;
+    }
+    .header__search-mobile{
+      display:  block;
+      fill: $icon-color;
+      padding-top: 10px;
+      margin-left: -10px;
+    }
+    .header__search1{
+      display: none;
+      
+    }
+  }

@@ -1,0 +1,216 @@
+:root {
+    --black-bkg: #222222;
+    --pink-bkg: #f1e4e6;
+    --pink-color: #f18b99;
+    --sales-bkg: #4e4544;
+    --product-bkg: #f8f8f8;
+    --icon-color: #f2f2f2;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: inherit;
+  }
+  
+  .search {
+    margin-left: -20px;
+    height: 40px;
+    background-color: var(--icon-color);
+    border-radius: 20px;
+    float: right;
+    }
+    .search_input {
+    color: black;
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    caret-color: transparent;
+    transition: width 0.4s linear;
+    float: right;
+    }
+    .search .search_input {
+    padding: 11px 10px 10px 10px;
+    width: 200px;
+    caret-color: var(--pink-color);
+    transition: width 0.4s linear;
+    float: right;
+    }
+    .search:hover>.search_icon {
+    background: var(--pink-color);
+    color: #fff
+    }
+    .search_icon {
+      margin: 6px;
+      height: 30px;
+      fill: #9e9e9e;
+    }
+    .search_icon:hover{
+      fill: var(--pink-color);
+      transition: 0.2s;
+    }
+    .search_icon:active{
+      opacity: 0.7;
+    }
+    .search_icon:focus{
+      fill: var(--pink-color);
+    }
+    a:link {
+    text-decoration: none
+    }
+  
+  .button-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  
+  .browse__wrp {
+    justify-content: center;
+    text-align: center;
+  }
+  .browse__button {
+    margin: 50px 0 100px 0;
+  }
+  @media (max-width: 376px) {
+    .browse__button {
+      padding-left: -100px;
+    }
+  }
+  
+  .browse__button:hover .browse__button-title {
+    background-color: #f26376;
+    color: white;
+    transition: 0.4s;
+  }
+  .browse__button-title {
+    font-size: 16px;
+    color: #f26376;
+    font-weight: 500;
+    padding: 14px 40px 14px 40px;
+    border: 2px solid #ff6a6a;
+  }
+    ::-webkit-inner-spin-button#menu__toggle {
+    opacity: 0;
+  }
+  #menu__toggle:checked + .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked + .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0deg);
+  }
+  #menu__toggle:checked + .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    left: 0 !important;
+  }
+  .menu__btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #616161;
+    transition-duration: .25s;
+  }
+  .menu__btn > span::before {
+    content: '';
+    top: -8px;
+  }
+  .menu__btn > span::after {
+    content: '';
+    top: 8px;
+  }
+  .menu__box {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    background-color: #ECEFF1;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+    transition-duration: .25s;
+  }
+  .menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition-duration: .25s;
+  }
+  .menu__item:hover {
+    background-color: #CFD8DC;
+  }
+  
+  [type="search"] {
+    padding: 10px 20px;
+    border: none;
+    outline: 1px solid black;
+  }
+  
+  .form {
+    position: relative;
+    outline: 1px solid rgb(255, 255, 255);
+    background-color: white;
+    border-radius: 5px;
+  }
+  
+  [type="search"]:hover {
+    outline: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+  }
+  
+  .form:before {
+    content: '';
+    position: absolute;
+    width:15px;
+    height: 15px;
+    background: rgb(255, 255, 255);
+    top: 10px;
+    left: 2px;
+    background-image: url(../img/search.svg);
+    background-size: 15px 15px;
+  }
+  
+  body {
+    background: transparent;
+  }
+  
+  .wrp {
+    width: 100%;
+    height: 100px;
+    display: none;
+  }
+  .brand__title-wrp:before {
+    opacity: 0;
+  }
+  .brand__img:before {
+    opacity: 1;
+    background-color: black;
+  }
+  .brand__img:hover .header__burger
+  {
+    opacity: 0.2;
+  }
